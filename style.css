@@ -1,0 +1,46 @@
+  /* Responsive images */
+  .Watch-frame {    
+    max-width: 20rem;
+    height: auto;
+    transition: 200ms ease-in-out; /* Makes the transition nice and smooth */
+    
+  }
+
+    /* super custom dimensions on the tv screen part */
+    .time {
+        top: 40%;
+        left: 110%;
+        position: absolute;
+        color: white;
+        font-size: 1.5rem;
+        
+      }
+        
+  /* Note, this is position: relative so that we can put the image inside of it */
+  .Watch-picture-container {
+    /* margin: 50px auto; */
+    width: 100px; /* fixed width so we can get the faux screen to sit in place */
+    position: relative;
+  }
+  .watch-contant{
+    width: 35%;
+  }
+  .type-watch{
+
+  }
+  @media only screen and (max-width: 700px) {
+    .container-watch{
+        display: flex;
+        flex-direction: column;
+        
+    }
+  }
+  @media only screen and (min-width: 700px) {
+    .container-watch{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+    }
+  }
